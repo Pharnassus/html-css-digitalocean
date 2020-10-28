@@ -5,6 +5,7 @@
     <title>DigitalOcean</title>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <!-- Gfonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
@@ -16,7 +17,8 @@
   <body>
 
     <header>
-      <div id="ms_header_top">
+      <!-- header_top -->
+      <nav id="ms_header_top">
         <div class="container">
           <div class="row">
             <div class="col-xs-9 col-lg-3">
@@ -31,7 +33,7 @@
                   </a>
                 </li>
                 <li role="presentation">
-                  <a href="#">Profile</a>
+                  <a href="#">Customers</a>
                 </li>
                 <li role="presentation" class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -67,8 +69,37 @@
             </div>
           </div>
         </div>
+      </nav>
+      <!-- /header_top -->
+
+      <!-- jumbotron -->
+      <div id="ms_jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-sx-12 col-md-7">
+              <h1>The simplest cloud platform for developers & teams</h1>
+              <p>Deploy, manage, and scale cloud application faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, whether you're running one virtual machine or ten thousand.</p>
+            </div>
+            <div class="col-sx-12 col-md-5">
+              <div class="ms_deploy text-center">
+                <h2>Deploy your app in seconds.<br><span>Get started now.</span></h2>
+                <div class="input-group">
+                  <input type="email" class="form-control ms_register" placeholder="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                  <input type="password" class="form-control ms_register" placeholder="Password" aria-describedby="basic-addon1">
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a type="button" class="ms_btn_create btn btn-default">Create you account</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+      <!-- /jumbotron -->
+          </header>
 
     <main>
 

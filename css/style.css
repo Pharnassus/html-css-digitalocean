@@ -5,8 +5,13 @@
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
   /* background: blue; */
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  color: white;
+  font-size: 65px;
+  font-weight: 600;
 }
 ul{
   padding-inline-start: 0;
@@ -14,13 +19,16 @@ ul{
   margin-block-end: 0;
 }
 
+/* <!-- header_top --> */
 #ms_header_top{
+  background: white;
   width: 100%;
   height: 80px;
   color: white;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
   line-height: 76px;
 }
 #ms_header_top img{
@@ -44,16 +52,17 @@ ul{
   padding-right: 0;
 }
 .col-xs-3.col-lg-4 li:first-child{
-  padding-left: 54px;
+  padding-left: 90px;
 }
 #ms_header_top .sm_top_button{
-  border: 2px solid #045ffb;
+  border: 2px solid  #3A8AFF;
+  color:  #3A8AFF;
   line-height: 45px;
   margin-top: 15px;
   padding-left: 5px;
 }
 #ms_header_top .sm_top_button:hover{
-  background: #045ffb;
+  background:  #3A8AFF;
   color: white;
 }
 #ms_header_top .ms_hamburger{
@@ -62,9 +71,67 @@ ul{
   margin-top: 20px;
   line-height: 45px;
 }
+/* <!-- /header_top --> */
+
+/* <!-- jumbotron --> */
+#ms_jumbotron{
+  /* margin-top: 80px; */
+  height: 800px;
+  background-image: url('../img/jumbotron.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+#ms_jumbotron [class*="col-"]{
+  padding: 220px 15px 150px 15px;
+}
+#ms_jumbotron p{
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+#ms_jumbotron .ms_deploy{
+  background: white;
+  width: 450px;
+  height: 400px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#ms_jumbotron .ms_deploy h2{
+  font-weight: 800;
+  line-height: 45px;
+}
+#ms_jumbotron .ms_deploy h2 span{
+  color: #006AFF;
+}
+#ms_jumbotron .ms_register{
+  width: 195%;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 17px;
+  padding: 25px 10px;
+  margin-bottom: 12px;
+}
+#ms_jumbotron .ms_btn_create{
+  padding: 10px 142px;
+  margin-left: -5px;
+  background: #579AFF;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+#ms_jumbotron .ms_btn_create:hover{
+  background: #1633FF;
+}
+/* <!-- /jumbotron --> */
 
 
 
+/* QUERIES */
+@media screen and (min-width: 1200px){
+
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -75,9 +142,5 @@ ul{
 }
 
 @media screen and (max-width: 767px){
-
-  h3{
-    font-size: 0.9em;
-  }
 
 }

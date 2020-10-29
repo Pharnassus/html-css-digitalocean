@@ -28,8 +28,9 @@ ul{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   line-height: 76px;
+  border-bottom: 2px solid #BDEBFF;
 }
 #ms_header_top img{
 
@@ -83,7 +84,7 @@ ul{
   background-position: top;
 }
 #ms_jumbotron [class*="col-"]{
-  padding: 220px 15px 150px 15px;
+  padding: 200px 15px 150px 15px;
 }
 #ms_jumbotron p{
   color: white;
@@ -108,34 +109,109 @@ ul{
 }
 .ms_deploy .ms_register{
   width: 195%;
-  border-radius: 5px;
+  border-radius: 5px !important;
   box-shadow: none;
   font-size: 17px;
   padding: 25px 10px;
   margin-bottom: 12px;
 }
 .ms_deploy .ms_btn_create{
-  padding: 10px 142px;
-  margin-left: -5px;
   background: #579AFF;
   color: white;
   font-size: 15px;
   font-weight: 600;
+  padding: 10px 142px;
+  margin-left: -5px;
+  margin-bottom: 5px;
 }
 .ms_deploy .ms_btn_create:hover{
   background: #1633FF;
 }
+.ms_deploy .ms_btn_sign{
+  background: white;
+  color: #6B6B6B;
+  border-radius: 5px !important;
+  margin-left: -2px;
+  padding: 10px 142px;
+}
+.ms_deploy .ms_btn_sign:hover{
+  background: white;
+  color: black;
+  border-color: black;
+  border-radius: 5px !important;
+}
+.ms_deploy div.btn-group{
+  position: relative;
+}
+.ms_deploy div.btn-group img{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  float: none;
+  top: 45%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.ms_deploy span,
+#ms_header_bottom span{
+  font-weight: 600;
+}
 /* <!-- /jumbotron --> */
 
-
+/* <!-- ms_header_bottom --> */
+#ms_header_bottom{
+  background: #F3F5F9;
+  height: 325px;
+  width: 100%;
+  padding: 50px 0;
+}
+#ms_header_bottom h4{
+  color: #5B6987;
+  font-size: 16px;
+  font-weight: 600;
+}
+#ms_header_bottom .ms_partner{
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 100px;
+}
+.ms_partner img{
+  max-width: 160px;
+  min-height: 95px;
+  position: absolute;
+  float: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* <!-- /ms_header_bottom --> */
 
 /* QUERIES */
 @media screen and (min-width: 1200px){
+
+  /* <!-- jumbotron --> */
+  #ms_jumbotron{
+  height: 700px;
+  background-image: url('../img/jumbotron.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  }
+  #ms_jumbotron [class*="col-"]{
+    padding: 180px 15px 150px 15px;
+  }
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  /* <!-- /ms_header_bottom --> */
 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
 
+  /* <!-- jumbotron --> */
   #ms_jumbotron .ms_deploy{
     background: white;
     width: 370px;
@@ -159,11 +235,28 @@ ul{
     font-size: 15px;
     font-weight: 600;
   }
+  .ms_deploy .ms_btn_sign{
+    background: white;
+    color: #6B6B6B;
+  }
+  .ms_deploy .ms_btn_sign:hover{
+    background: white;
+    color: black;
+    border-color: black;
+  }
+  /* <!-- /jumbotron --> */
 
+  /* <!-- ms_header_bottom --> */
+  .ms_partner img {
+    max-width: 140px;
+    min-height: 95px;
+  }
+  /* <!-- /ms_header_bottom --> */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 
+  /* <!-- jumbotron --> */
   h1{
     padding-top: 100px;
     color: white;
@@ -196,11 +289,28 @@ ul{
     font-size: 17px;
     font-weight: 600;
   }
+  .ms_deploy .ms_btn_sign{
+    background: white;
+    color: #6B6B6B;
+  }
+  .ms_deploy .ms_btn_sign:hover{
+    background: white;
+    color: black;
+    border-color: black;
+  }
+  /* <!-- /jumbotron --> */
 
+  /* <!-- ms_header_bottom --> */
+  .ms_partner img {
+    max-width: 110px;
+    min-height: 80px;
+  }
+  /* <!-- /ms_header_bottom --> */
 }
 
 @media screen and (max-width: 767px){
 
+  /* <!-- jumbotron --> */
   h1{
     padding-top: 110px;
     color: white;
@@ -235,14 +345,43 @@ ul{
     font-size: 15px;
     padding: 16px 10px;
     margin-bottom: 10px;
-}
-.ms_deploy .ms_btn_create {
-  padding: 6px 98px;
-  margin-left: -1px !important;
-  background: #579AFF;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-}
+  }
+  .ms_deploy .ms_btn_create {
+    padding: 6px 98px;
+    margin-left: -1px !important;
+    background: #579AFF;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .ms_deploy .ms_btn_sign{
+    background: white;
+    color: #6B6B6B;
+  }
+  .ms_deploy .ms_btn_sign:hover{
+    background: white;
+    color: black;
+    border-color: black;
+  }
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  #ms_header_bottom {
+    height: 350px;
+    padding: 25px 0;
+  }
+  #ms_header_bottom h4 {
+    font-size: 14px;
+  }
+  #ms_header_bottom .ms_partner {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 80px;
+  }
+  .ms_partner img {
+    max-width: 115px;
+    min-height: 80px;
+  }
+  /* <!-- /ms_header_bottom --> */
 
 }

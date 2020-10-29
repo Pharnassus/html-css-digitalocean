@@ -310,8 +310,11 @@ span > a{
 }
 #ms_service_main [class*="col-"]:not([class*="col-xs-12"]){
   min-height: 40px;
-  /* background-color: gray; */
   border-bottom: 1px solid white;
+}
+
+#ms_service_main .ms_bottom_none {
+  border-bottom: none !important;
 }
 #ms_service_main h2{
   color: white;

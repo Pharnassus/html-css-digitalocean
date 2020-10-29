@@ -13,6 +13,18 @@ h1{
   font-size: 65px;
   font-weight: 600;
 }
+h2{
+  font-weight: 800;
+  font-size: 35px;
+}
+h4{
+  font-size: 17px;
+  font-weight: 800;
+}
+p{
+  font-size: 22px;
+  color: #667593;
+}
 ul{
   padding-inline-start: 0;
   margin-block-start: 0;
@@ -30,7 +42,7 @@ ul{
   left: 0;
   z-index: 4;
   line-height: 76px;
-  border-bottom: 2px solid #BDEBFF;
+  border-bottom: 2px solid #667593;
 }
 #ms_header_top img{
 
@@ -96,7 +108,7 @@ ul{
 #ms_jumbotron .ms_deploy{
   background: white;
   width: 450px;
-  height: 400px;
+  height: 443px;
   padding: 15px;
   border-radius: 5px;
 }
@@ -188,7 +200,40 @@ ul{
 }
 /* <!-- /ms_header_bottom --> */
 
-/* QUERIES */
+/* <!-- ms_deploy_main --> */
+#ms_deploy_main{
+  padding: 50px 0;
+}
+#ms_deploy_main .ms_wrapper80{
+  width: 82% ;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#ms_deploy_main .ms_deploy_list{
+  height: 255px;
+  border-left: 3px solid #CCCCCC;
+}
+.ms_deploy_list ul{
+  list-style: none;
+}
+.ms_deploy_list ul li{
+  color: #75809A;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-left: 10px;
+}
+#ms_deploy_main img{
+  max-width: 40px;
+  min-height: 40px;
+}
+.ms_wrapper80 p{
+  font-size: 14px;
+}
+/* <!-- /ms_deploy_main --> */
+
+
+/* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
 
   /* <!-- jumbotron --> */
@@ -207,6 +252,8 @@ ul{
   /* <!-- ms_header_bottom --> */
   /* <!-- /ms_header_bottom --> */
 
+  /* <!-- ms_deploy_main --> */
+  /* <!-- /ms_deploy_main --> */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -252,6 +299,9 @@ ul{
     min-height: 95px;
   }
   /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_main --> */
+  /* <!-- /ms_deploy_main --> */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -306,6 +356,9 @@ ul{
     min-height: 80px;
   }
   /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_main --> */
+  /* <!-- /ms_deploy_main --> */
 }
 
 @media screen and (max-width: 767px){
@@ -383,5 +436,25 @@ ul{
     min-height: 80px;
   }
   /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_main --> */
+  h2{
+    font-size: 27px;
+  }
+  p{
+    font-size: 18px;
+  }
+  #ms_deploy_main .ms_wrapper80 {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  #ms_deploy_main .container-fluid.text-left{
+    padding: 20px 0
+  }
+  .ms_wrapper80 p {
+    font-size: 13px;
+  }
+  /* <!-- /ms_deploy_main --> */
 
 }

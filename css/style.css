@@ -299,6 +299,43 @@ span > a{
 }
 /* <!-- /ms_features_main --> */
 
+/* <!-- ms_service_main --> */
+#ms_service_main{
+  background-color: #031B4E;
+  background-image: url('../img/blue-map.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+#ms_service_main [class*="col-"]:not([class*="col-xs-12"]){
+  min-height: 40px;
+  /* background-color: gray; */
+  border-bottom: 1px solid white;
+}
+#ms_service_main h2{
+  color: white;
+}
+#ms_service_main .ms_padding_service{
+  padding-top: 30px;
+}
+#ms_service_main span{
+  display: block;
+  padding-top: 10px;
+}
+#ms_service_main .ms_sx{
+  color: white;
+  font-weight: 600;
+}
+#ms_service_main .ms_md{
+  color: #9DB3E2;
+}
+#ms_service_main span a{
+  float: right;
+  color: #00C0CF;
+}
+/* <!-- /ms_service_main --> */
+
 /* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
 
@@ -322,6 +359,9 @@ span > a{
 
   /* <!-- ms_features_main --> */
   /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -372,6 +412,9 @@ span > a{
 
   /* <!-- ms_features_main --> */
   /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -441,6 +484,9 @@ span > a{
 
   /* <!-- ms_features_main --> */
   /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
 }
 
 @media screen and (max-width: 767px){
@@ -555,4 +601,11 @@ span > a{
     margin-top: 30px;
 }
   /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  #ms_service_main span a {
+    padding-top: 4px;
+    font-size: 10px;
+}
+  /* <!-- /ms_service_main --> */
 }

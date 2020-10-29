@@ -30,6 +30,11 @@ ul{
   margin-block-start: 0;
   margin-block-end: 0;
 }
+span > a{
+  color: #238DCD;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 /* <!-- header_top --> */
 #ms_header_top{
@@ -227,7 +232,8 @@ ul{
   max-width: 40px;
   min-height: 40px;
 }
-.ms_wrapper80 p{
+.ms_wrapper80 p,
+#ms_features_main p{
   font-size: 14px;
 }
 /* <!-- /ms_deploy_main --> */
@@ -280,6 +286,19 @@ ul{
 }
 /* <!-- /ms_designed_main --> */
 
+/* <!-- ms_features_main --> */
+#ms_features_main{
+  padding: 50px 0;
+}
+#ms_features_main .row.text-left{
+  margin-top: 45px;
+}
+#ms_features_main img{
+  border: 1px solid #006AFF;
+  border-radius: 5px;
+}
+/* <!-- /ms_features_main --> */
+
 /* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
 
@@ -300,6 +319,9 @@ ul{
 
   /* <!-- ms_designed_main --> */
   /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -347,6 +369,9 @@ ul{
     width: 75%;
   }
   /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -413,6 +438,9 @@ ul{
     padding: 15px;
   }
   /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
 }
 
 @media screen and (max-width: 767px){
@@ -521,4 +549,10 @@ ul{
     margin-bottom: 10px;
 }
   /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  #ms_features_main .col-xs-12:not(:first-child) {
+    margin-top: 30px;
+}
+  /* <!-- /ms_features_main --> */
 }

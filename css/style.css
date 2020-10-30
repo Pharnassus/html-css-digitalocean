@@ -316,7 +316,8 @@ span > a{
 #ms_service_main .ms_bottom_none {
   border-bottom: none !important;
 }
-#ms_service_main h2{
+#ms_service_main h2,
+#ms_get_started_main h2{
   color: white;
 }
 #ms_service_main .ms_padding_service{
@@ -338,6 +339,27 @@ span > a{
   color: #00C0CF;
 }
 /* <!-- /ms_service_main --> */
+
+/* <!-- ms_development_main --> */
+#ms_designed_main .ms_circles{
+  padding-top: 30px;
+}
+/* <!-- /ms_development_main --> */
+
+/* <!-- ms_get_started_main --> */
+#ms_get_started_main{
+  padding: 50px 0;
+  background-image: url('../img/get-started-now.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ms_get_started_main .ms_btn_create{
+  padding: 10px 20px;
+  color: #0069FD;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* <!-- /ms_get_started_main --> */
 
 /* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
@@ -365,6 +387,12 @@ span > a{
 
   /* <!-- ms_service_main --> */
   /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -418,6 +446,12 @@ span > a{
 
   /* <!-- ms_service_main --> */
   /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -490,6 +524,12 @@ span > a{
 
   /* <!-- ms_service_main --> */
   /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
 }
 
 @media screen and (max-width: 767px){
@@ -611,4 +651,10 @@ span > a{
     font-size: 10px;
 }
   /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
 }

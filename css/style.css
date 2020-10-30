@@ -360,7 +360,60 @@ span > a{
   font-weight: 600;
 }
 /* <!-- /ms_get_started_main --> */
-
+footer{
+  padding: 50px 0;
+  background: #010E28;
+  color: white;
+}
+footer img{
+  margin-bottom: 15px;
+}
+footer ul li{
+  display: inline-block;
+}
+footer .ms_footer_social{
+/* border: 1px solid white; */
+position: relative;
+width: 25px;
+height: 25px;
+margin-top: 7px;
+margin-right: 10px;
+}
+footer i{
+  position: absolute;
+  float: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5A6887;
+  vertical-align: middle;
+  font-size: 25px;
+}
+footer i:hover{
+  color: white;
+}
+footer h4{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+footer span,
+footer span a{
+  display: block;
+  color: #807E7F;
+  font-size: 17px;
+  font-weight: 600;
+}
+footer .col-xs-12.col-sm-6.col-lg-2 span a{
+  margin-bottom: 7px;
+}
+footer .col-xs-12.col-lg-4 span:last-of-type{
+  color: #5A6887;
+}
+footer span a:hover{
+  color: white;
+  text-decoration: none;
+}
 /* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
 
@@ -625,6 +678,7 @@ span > a{
   }
   .ms_wrapper80 p {
     font-size: 13px;
+    margin-bottom: 20px;
   }
   /* <!-- /ms_deploy_main --> */
 
@@ -648,7 +702,7 @@ span > a{
   /* <!-- ms_service_main --> */
   #ms_service_main span a {
     padding-top: 4px;
-    font-size: 10px;
+    font-size: 9px;
 }
   /* <!-- /ms_service_main --> */
 
@@ -657,4 +711,11 @@ span > a{
 
   /* <!-- ms_get_started_main --> */
   /* <!-- /ms_get_started_main --> */
+
+  /* footer */
+  footer span, footer span a {
+    font-size: 16px;
+  }
+  /* /footer */
+
 }

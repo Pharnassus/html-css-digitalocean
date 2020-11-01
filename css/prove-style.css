@@ -3,8 +3,41 @@
   /* background-color: gray; */
   /* border: 1px solid black; */
 }
+body{
+  /* background: blue; */
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+}
+h2{
+  font-weight: 800;
+  font-size: 35px;
+}
+h4{
+  font-size: 17px;
+  font-weight: 800;
+}
+p{
+  font-size: 22px;
+  color: #667593;
+}
+ul{
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+span > a{
+  color: #238DCD;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 #ms_fixed_top{
+  background: white;
   position: fixed;
   width: 100%;
   top: 0;
@@ -60,4 +93,314 @@
 .ms_hamburger{
   color: #3A8AFF;
   font-size: 30px;
+}
+
+
+/* <!-- jumbotron --> */
+#ms_jumbotron{
+  padding: 200px 0 50px 0;
+  background-image: url('../img/jumbotron.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#ms_jumbotron p{
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+#ms_jumbotron .ms_deploy_contact{
+  background: white;
+  width: 90%;
+  float: right;
+  padding: 30px 0;
+  border-radius: 5px;
+}
+#ms_jumbotron .ms_deploy_contact h2{
+  line-height: 45px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#ms_jumbotron .ms_deploy_contact h2 span{
+  color: #006AFF;
+}
+
+.ms_deploy_contact .ms_jumbotron_form{
+  margin: 4%;
+}
+.ms_deploy_contact button{
+  margin-bottom: 10px;
+}
+.ms_deploy_contact .ms_btn_form{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid gray;
+}
+.ms_deploy_contact .ms_btn_blue{
+  background: #579AFF;
+  color: white;
+  font-weight: 600;
+}
+.ms_deploy_contact .ms_btn_blue:hover{
+  background: #1633FF;
+}
+.ms_deploy_contact .ms_btn_google{
+  background: white;
+  color: #626262;
+  font-weight: 600;
+  border: 1px solid #E6E6E6;
+  box-shadow: 1px 1px 1px #E6E6E6;
+}
+.ms_deploy_contact .ms_btn_google:hover{
+  border: 1px solid gray;
+}
+.ms_deploy_contact .ms_google_sign{
+  position: relative;
+}
+.ms_google_sign img{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  float: none;
+  top: 50%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.ms_deploy_contact span,
+#ms_header_bottom span{
+  font-weight: 600;
+}
+/* <!-- /jumbotron --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+
+  /* <!-- jumbotron --> */
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
+
+  /* <!-- ms_designed_main --> */
+  /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+  /* <!-- jumbotron --> */
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  .ms_partner img {
+    max-width: 140px;
+    min-height: 95px;
+  }
+  /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
+
+  /* <!-- ms_designed_main --> */
+  .ms_wrapper70 img {
+    width: 75%;
+  }
+  /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  /* <!-- jumbotron --> */
+  #ms_jumbotron {
+    padding: 125px 0 50px 0;
+  }
+  #ms_jumbotron .ms_deploy_contact{
+    float: none;
+    width: 100%;
+  }
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  .ms_partner img {
+    max-width: 110px;
+    min-height: 80px;
+  }
+  /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
+
+  /* <!-- ms_designed_main --> */
+  .ms_wrapper70 .ms_angle_left {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .ms_wrapper70 img {
+    width: 75%;
+  }
+  .ms_wrapper70 .ms_angle_right {
+    font-size: 40px;
+    padding: 15px;
+  }
+  /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
+}
+
+@media screen and (max-width: 767px){
+
+  /* <!-- jumbotron --> */
+  #ms_jumbotron {
+    padding: 110px 0 50px 0;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  #ms_jumbotron p {
+    font-size: 16px;
+  }
+  #ms_jumbotron .ms_deploy_contact{
+    float: none;
+    width: 100%;
+  }
+  #ms_jumbotron .ms_deploy_contact h2 {
+    line-height: 32px;
+    font-size: 23px;
+  }
+  /* <!-- /jumbotron --> */
+
+  /* <!-- ms_header_bottom --> */
+  #ms_header_bottom {
+    height: 350px;
+    padding: 25px 0;
+  }
+  #ms_header_bottom h4 {
+    font-size: 14px;
+  }
+  #ms_header_bottom .ms_partner {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 80px;
+  }
+  .ms_partner img {
+    max-width: 115px;
+    min-height: 80px;
+  }
+  /* <!-- /ms_header_bottom --> */
+
+  /* <!-- ms_deploy_contact_main --> */
+  h2{
+    font-size: 27px;
+  }
+  p{
+    font-size: 18px;
+  }
+  #ms_deploy_contact_main .ms_wrapper80 {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  #ms_deploy_contact_main .container-fluid.text-left{
+    padding: 20px 0
+  }
+  .ms_wrapper80 p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  /* <!-- /ms_deploy_contact_main --> */
+
+  /* <!-- ms_designed_main --> */
+  .ms_wrapper70 .ms_angle_left,
+  .ms_wrapper70 .ms_angle_right{
+    display: none;
+  }
+  .ms_wrapper70 p {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+  /* <!-- /ms_designed_main --> */
+
+  /* <!-- ms_features_main --> */
+  #ms_features_main .col-xs-12:not(:first-child) {
+    margin-top: 30px;
+}
+  /* <!-- /ms_features_main --> */
+
+  /* <!-- ms_service_main --> */
+  #ms_service_main span a {
+    padding-top: 4px;
+    font-size: 9px;
+}
+  /* <!-- /ms_service_main --> */
+
+  /* <!-- ms_development_main --> */
+  /* <!-- /ms_development_main --> */
+
+  /* <!-- ms_get_started_main --> */
+  /* <!-- /ms_get_started_main --> */
+
+  /* footer */
+  footer span, footer span a {
+    font-size: 16px;
+  }
+  /* /footer */
+
 }

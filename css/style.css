@@ -70,7 +70,7 @@ span > a{
   color: #0E0E0E;
   font-size: 17px;
   font-weight: 600;
-  padding: 0 15px 0 0;
+  padding: 0 10px 0 0;
 }
 .nav > li > a:hover{
   color: #045ffb;
@@ -100,84 +100,85 @@ span > a{
 
 /* <!-- jumbotron --> */
 #ms_jumbotron{
-  /* margin-top: 80px; */
-  height: 800px;
+  margin-top: 30px;
+  margin-top: 80px;
+  padding: 110px 0 50px 0;
   background-image: url('../img/jumbotron.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
-#ms_jumbotron [class*="col-"]{
-  padding: 200px 15px 150px 15px;
-}
+
 #ms_jumbotron p{
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
 
-#ms_jumbotron .ms_deploy{
+#ms_jumbotron .ms_deploy_contact{
   background: white;
-  width: 450px;
-  height: 443px;
-  padding: 15px;
+  width: 90%;
+  float: right;
+  padding: 30px 0;
   border-radius: 5px;
 }
-#ms_jumbotron .ms_deploy h2{
-  font-weight: 800;
+#ms_jumbotron .ms_deploy_contact h2{
   line-height: 45px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-#ms_jumbotron .ms_deploy h2 span{
+#ms_jumbotron .ms_deploy_contact h2 span{
   color: #006AFF;
 }
-.ms_deploy .ms_register{
-  width: 195%;
-  border-radius: 5px !important;
-  box-shadow: none;
-  font-size: 17px;
-  padding: 25px 10px;
-  margin-bottom: 12px;
+
+.ms_deploy_contact .ms_jumbotron_form{
+  margin: 4%;
 }
-.ms_deploy .ms_btn_create{
+.ms_deploy_contact button{
+  margin-bottom: 10px;
+}
+.ms_deploy_contact .ms_btn_form{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid gray;
+}
+.ms_deploy_contact .ms_btn_blue{
   background: #579AFF;
   color: white;
-  font-size: 15px;
   font-weight: 600;
-  padding: 10px 142px;
-  margin-left: -5px;
-  margin-bottom: 5px;
 }
-.ms_deploy .ms_btn_create:hover{
+.ms_deploy_contact .ms_btn_blue:hover{
   background: #1633FF;
 }
-.ms_deploy .ms_btn_sign{
+.ms_deploy_contact .ms_btn_google{
   background: white;
-  color: #6B6B6B;
-  border-radius: 5px !important;
-  margin-left: -2px;
-  padding: 10px 142px;
+  color: #626262;
+  font-weight: 600;
+  border: 1px solid #E6E6E6;
+  box-shadow: 1px 1px 1px #E6E6E6;
 }
-.ms_deploy .ms_btn_sign:hover{
-  background: white;
-  color: black;
-  border-color: black;
-  border-radius: 5px !important;
+.ms_deploy_contact .ms_btn_google:hover{
+  border: 1px solid gray;
 }
-.ms_deploy div.btn-group{
+.ms_deploy_contact .ms_google_sign{
   position: relative;
 }
-.ms_deploy div.btn-group img{
+.ms_google_sign img{
   position: absolute;
   width: 25px;
   height: 25px;
   float: none;
-  top: 45%;
-  left: 5%;
+  top: 50%;
+  left: 6%;
   transform: translate(-50%, -50%);
   z-index: 3;
 }
-.ms_deploy span,
+
+.ms_deploy_contact span,
 #ms_header_bottom span{
   font-weight: 600;
 }
@@ -425,19 +426,13 @@ footer span a:hover{
 @media screen and (min-width: 1200px){
 
   /* <!-- jumbotron --> */
-  #ms_jumbotron{
-  height: 700px;
-  }
-  #ms_jumbotron [class*="col-"]{
-    padding: 180px 15px 150px 15px;
-  }
   /* <!-- /jumbotron --> */
 
   /* <!-- ms_header_bottom --> */
   /* <!-- /ms_header_bottom --> */
 
-  /* <!-- ms_deploy_main --> */
-  /* <!-- /ms_deploy_main --> */
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
 
   /* <!-- ms_designed_main --> */
   /* <!-- /ms_designed_main --> */
@@ -458,31 +453,6 @@ footer span a:hover{
 @media screen and (min-width: 992px) and (max-width: 1199px){
 
   /* <!-- jumbotron --> */
-  #ms_jumbotron .ms_deploy{
-    width: 370px;
-    height: 500px;
-  }
-  #ms_jumbotron .ms_register{
-    width: 145%;
-    font-size: 20px;
-  }
-  .ms_deploy .ms_btn_create{
-    padding: 10px 105px;
-    margin-left: -5px;
-    background: #579AFF;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .ms_deploy .ms_btn_sign{
-    background: white;
-    color: #6B6B6B;
-  }
-  .ms_deploy .ms_btn_sign:hover{
-    background: white;
-    color: black;
-    border-color: black;
-  }
   /* <!-- /jumbotron --> */
 
   /* <!-- ms_header_bottom --> */
@@ -492,8 +462,8 @@ footer span a:hover{
   }
   /* <!-- /ms_header_bottom --> */
 
-  /* <!-- ms_deploy_main --> */
-  /* <!-- /ms_deploy_main --> */
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
 
   /* <!-- ms_designed_main --> */
   .ms_wrapper70 img {
@@ -517,41 +487,12 @@ footer span a:hover{
 @media screen and (min-width: 768px) and (max-width: 991px){
 
   /* <!-- jumbotron --> */
-  h1{
-    padding-top: 100px;
-    font-size: 40px;
+  #ms_jumbotron {
+    padding: 125px 0 50px 0;
   }
-  #ms_jumbotron [class*="col-"]{
-    padding: 10px 15px 0px 15px;
-  }
-  #ms_jumbotron .ms_deploy {
-    width: 719px;
-    height: 395px;
-  }
-  .ms_deploy .ms_register {
-    width: 320%;
-    border-radius: 5px !important;
-    box-shadow: none;
-    font-size: 18px;
-    padding: 25px 10px;
-    margin-bottom: 12px;
-  }
-  .ms_deploy .ms_btn_create {
-    padding: 10px 270px;
-    margin-left: -2px !important;
-    background: #579AFF;
-    color: white;
-    font-size: 17px;
-    font-weight: 600;
-  }
-  .ms_deploy .ms_btn_sign{
-    background: white;
-    color: #6B6B6B;
-  }
-  .ms_deploy .ms_btn_sign:hover{
-    background: white;
-    color: black;
-    border-color: black;
+  #ms_jumbotron .ms_deploy_contact{
+    float: none;
+    width: 100%;
   }
   /* <!-- /jumbotron --> */
 
@@ -562,8 +503,8 @@ footer span a:hover{
   }
   /* <!-- /ms_header_bottom --> */
 
-  /* <!-- ms_deploy_main --> */
-  /* <!-- /ms_deploy_main --> */
+  /* <!-- ms_deploy_contact_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
 
   /* <!-- ms_designed_main --> */
   .ms_wrapper70 .ms_angle_left {
@@ -595,57 +536,22 @@ footer span a:hover{
 @media screen and (max-width: 767px){
 
   /* <!-- jumbotron --> */
-  h1{
-    padding-top: 110px;
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
+  #ms_jumbotron {
+    padding: 110px 0 50px 0;
   }
-  #ms_jumbotron p{
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
+  h1 {
+    font-size: 34px;
   }
-  #ms_jumbotron [class*="col-"]{
-    padding: 10px 15px 0px 15px;
+  #ms_jumbotron p {
+    font-size: 16px;
   }
-  #ms_jumbotron .ms_deploy {
-    background: white;
-    width: 344px;
-    height: 345px;
-    padding: 5px 15px;
-    border-radius: 5px;
+  #ms_jumbotron .ms_deploy_contact{
+    float: none;
+    width: 100%;
   }
-  #ms_jumbotron .ms_deploy h2 {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 35px;
-  }
-  .ms_deploy .ms_register {
-    width: 165%;
-    border-radius: 5px !important;
-    box-shadow: none;
-    font-size: 15px;
-    padding: 16px 10px;
-    margin-bottom: 10px;
-  }
-  .ms_deploy .ms_btn_create {
-    padding: 6px 98px;
-    margin-left: -1px !important;
-    background: #579AFF;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .ms_deploy .ms_btn_sign{
-    background: white;
-    color: #6B6B6B;
-  }
-  .ms_deploy .ms_btn_sign:hover{
-    background: white;
-    color: black;
-    border-color: black;
+  #ms_jumbotron .ms_deploy_contact h2 {
+    line-height: 32px;
+    font-size: 23px;
   }
   /* <!-- /jumbotron --> */
 
@@ -668,26 +574,26 @@ footer span a:hover{
   }
   /* <!-- /ms_header_bottom --> */
 
-  /* <!-- ms_deploy_main --> */
+  /* <!-- ms_deploy_contact_main --> */
   h2{
     font-size: 27px;
   }
   p{
     font-size: 18px;
   }
-  #ms_deploy_main .ms_wrapper80 {
+  #ms_deploy_contact_main .ms_wrapper80 {
     width: 100%;
     margin-top: 50px;
     padding: 0;
   }
-  #ms_deploy_main .container-fluid.text-left{
+  #ms_deploy_contact_main .container-fluid.text-left{
     padding: 20px 0
   }
   .ms_wrapper80 p {
     font-size: 13px;
     margin-bottom: 20px;
   }
-  /* <!-- /ms_deploy_main --> */
+  /* <!-- /ms_deploy_contact_main --> */
 
   /* <!-- ms_designed_main --> */
   .ms_wrapper70 .ms_angle_left,

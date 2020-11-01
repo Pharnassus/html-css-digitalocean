@@ -101,7 +101,6 @@ span > a{
 /* <!-- jumbotron --> */
 #ms_jumbotron{
   margin-top: 30px;
-  margin-top: 80px;
   padding: 110px 0 50px 0;
   background-image: url('../img/jumbotron.svg');
   background-repeat: no-repeat;
@@ -247,11 +246,11 @@ span > a{
 /* <!-- /ms_deploy_main --> */
 
 /* <!-- ms_designed_main --> */
-#ms_designed_main{
+.ms_designed_main{
   background: #F3F5F9;
   padding: 50px 0;
 }
-#ms_designed_main .ms_wrapper70{
+.ms_designed_main .ms_wrapper70{
   width: 60%;
   margin: 0 auto;
   margin-top: 70px;
@@ -349,7 +348,7 @@ span > a{
 /* <!-- /ms_service_main --> */
 
 /* <!-- ms_development_main --> */
-#ms_designed_main .ms_circles{
+.ms_designed_main .ms_circles{
   padding-top: 30px;
 }
 /* <!-- /ms_development_main --> */
@@ -422,6 +421,8 @@ footer span a:hover{
   color: white;
   text-decoration: none;
 }
+
+
 /* -------------------------QUERIES-------------------------- */
 @media screen and (min-width: 1200px){
 
@@ -488,7 +489,7 @@ footer span a:hover{
 
   /* <!-- jumbotron --> */
   #ms_jumbotron {
-    padding: 125px 0 50px 0;
+    padding: 100px 0 50px 0;
   }
   #ms_jumbotron .ms_deploy_contact{
     float: none;
@@ -537,7 +538,7 @@ footer span a:hover{
 
   /* <!-- jumbotron --> */
   #ms_jumbotron {
-    padding: 110px 0 50px 0;
+    padding: 65px 0 50px 0;
   }
   h1 {
     font-size: 34px;
